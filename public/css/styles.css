@@ -8,9 +8,7 @@
     box-sizing: border-box;
 }
 
-body{
-    /* overflow: hidden; */
-}
+
 
 /* ---------------CSS MENU--------------- */
 
@@ -71,7 +69,7 @@ h4, h5{
 }
 
 .digital h2, .digital h3, .digital h4{
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .dUnderline {
@@ -96,11 +94,11 @@ h4, h5{
 }
 
 .digital h4, .analogic h4{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .analogic h2, .analogic h3, .analogic h4{
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .analogic a{
@@ -133,17 +131,17 @@ h4, h5{
     background-color:whitesmoke;
     text-align: center;
     font-size: 2rem!important;
-    margin: 0px 20px 20px 20px;
+    margin: 0px 20px 0px 20px;
     padding-top: 20px;
 }
 
 .about img{
     margin: 25px;
-    margin-left: 50px;
+    margin-left: 80px;
     height: 200px;
-    filter: grayscale(70%);
+    /* filter: grayscale(70%); */
     border-radius: 50%;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .aboutContainer{
@@ -250,7 +248,7 @@ svg:focus{
     width: 15%;
     background: #000000!important;
     font-size: 0.65em;
-    right: 1%;
+    right: 0%;
     padding: 10px 0px 20px 0px;
     border: 1px solid rgb(197, 197, 197);
     display: flex;
@@ -286,6 +284,16 @@ svg:focus{
     color: white;
  }
 
+ .link a{
+    outline: none;
+    color: white;
+}
+
+.link a:hover{
+    text-decoration: none;
+    color: white;
+}
+
  .link:after {
     content: "";
     position: absolute;
@@ -320,3 +328,234 @@ svg:focus{
     color: white;
  }
  
+ /* ---------------DIGITAL--------------- */
+
+ @keyframes slide {
+    0%   { transform: translate(0px,0px); }
+    100% { transform: translate(0px,10px); }
+}
+
+ #bd{
+     background-color: black;
+ }
+
+ #d{
+     background-color: black;
+     color: white;
+     text-align: center;
+     font-size: 3rem!important;
+     margin-bottom: 0px!important;
+     padding: 40px;
+     border-bottom: 10px solid;
+     border-image-slice: 1;
+     border-width: 5px;
+     border-image-source: linear-gradient(120deg, #4a97b6 0%, #4acc80 100%);
+     letter-spacing: 0.5rem;
+ }
+
+ .digitalContainer{
+    /* display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start; */
+    background-color: black;
+    color: white;
+    height: max-content;
+    margin-top: 0px;
+ }
+
+ .educationContainer{
+    width: 100%;
+ }
+
+ .educationContainer h2{
+     margin-top: 20px;
+     margin-bottom: 20px;
+     padding-left: 50px;
+     width: 100%;
+ }
+
+.list ul{
+    margin-left: 50px;
+    list-style: none;
+    animation-name: slide;
+    animation-duration: 3s; 
+    animation-fill-mode: both;  
+}
+
+ .educationContainer ul li{
+     margin: 20px;
+     margin-bottom: 40px;
+     width: 500px;
+ }
+
+.list ul li::after{
+    display: inline-block;
+    content: "";
+    border-top: .15rem solid rgba(255, 255, 255, 0.548);
+    width: 45rem;
+    margin: 0 1rem;
+}
+
+ .skillContainer{
+     width: 100%;
+     border-top: 10px solid;
+     border-image-slice: 1;
+     border-width: 5px;
+     border-image-source: linear-gradient(120deg, #4a97b6 0%, #4acc80 100%);
+ }
+
+ .skillContainer h2{
+     text-align: center;
+     margin-bottom: 20px;
+     margin-top: 20px;
+ }
+
+ .skillContainer .bubbles div{
+     height: 120px;
+     width: 120px;
+     background-color: white;
+     color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 35px;
+    border-radius: 50%;
+    box-shadow: 5px 5px rgba(175, 177, 177, 0.932);
+    margin-bottom: 35px;
+    
+ }
+
+ .bubbles{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     height: max-content;
+     animation-name: slide;
+     animation-duration: 3s; 
+     animation-fill-mode: both;  
+ }
+
+ .experienceContainer{
+     background-color: black;
+     width: 100%!important;
+    color: white;
+    border-top: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(120deg, #4a97b6 0%, #4acc80 100%);
+ }
+
+ .experienceContainer h2{
+     text-align: center;
+     padding: 20px;
+ }
+
+ .job h3{
+     margin-bottom: 20px;
+     margin-top: 20px;
+ }
+
+ .job img{
+     width: 500px;
+     border: 2px solid white;
+     border-radius: 5px;
+ }
+
+ .job p{
+    font-family: 'Exo', sans-serif;
+    padding: 20px 0px 20px 0px
+ }
+
+ .job a{
+     text-decoration: none;
+     outline: none;
+     color: whitesmoke;
+     text-align: right;
+     padding: 30px 0px 30px 0px;
+     font-family: 'Maitree', sans-serif;
+     font-weight: bold;
+     letter-spacing: 0.1rem;
+ }
+
+ .job a:hover{
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+ }
+
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #a2ddec, 0 0 40px #dceceb, 0 0 50px #d2e8ecec, 0 0 60px #eee2e8, 0 0 70px #d2e5ec;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #d1eaf0, 0 0 40px #d5d7eb, 0 0 50px #c1eef7, 0 0 60px #cdf1ee, 0 0 70px #d8f8e8, 0 0 80px #ffffff;
+    }
+  }
+
+  .digMenu{
+    background-color: black!important;
+  }
+
+  .digSidebar{
+      background-color: white!important;
+  }
+
+  .digLine{
+    stroke: white!important;
+  }
+
+  .digLink{
+      color: black!important;
+  }
+
+  .digLink:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    border-bottom: 1px solid black!important;
+    bottom: 50%;
+    left: -100%;
+    transition-delay: all 0.5s;
+    transition: all 0.5s;
+    color: black!important;
+ }
+
+ .digLink a{
+    color: black!important;
+}
+
+.digLink a:hover{
+    color: black!important;
+}
+
+ .digLink .digText {
+    text-shadow: 0px -40px 0px rgb(0, 0, 0)!important;
+    transition: all 0.75s;
+    transform: translateY(100%) translateZ(0);
+    transition-delay: all 0.25s;
+    color: black!important;
+ }
+
+ .digLink:hover .digText,
+ .link.hover .text {
+    text-shadow: 0px -40px 0px black!important;
+    transform: translateY(0%) translateZ(0) scale(1.1);
+    font-weight: 600;
+    color: black!important;
+ }
+
+ .dUnderline {
+    background-image: linear-gradient(120deg, #4a97b6 0%, #4acc80 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+  }
+.dUnderline:hover {
+    background-size: 100% 88%;
+}
