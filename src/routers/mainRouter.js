@@ -7,5 +7,8 @@ router.get('/', function(req, res){
 router.get('/digital', function(req, res){
     res.render('digital')
 })
+router.get('/analogic', function(req, res){
+    res.render('analogic')
+})
 
 module.exports = router

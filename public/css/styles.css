@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;1,200&family=Maitree:wght@300&family=Playfair+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
 
 /* ---------------CSS GENERAL--------------- */
 *{
@@ -368,10 +369,13 @@ svg:focus{
  }
 
  .educationContainer h2{
+     text-align: center;
      margin-top: 20px;
      margin-bottom: 20px;
-     padding-left: 50px;
      width: 100%;
+     text-transform: uppercase;
+     letter-spacing: 0.5rem;
+     font-size: 1.5rem!important;
  }
 
 .list ul{
@@ -408,6 +412,9 @@ svg:focus{
      text-align: center;
      margin-bottom: 20px;
      margin-top: 20px;
+     text-transform: uppercase;
+     letter-spacing: 0.5rem;
+     font-size: 1.5rem!important;
  }
 
  .skillContainer .bubbles div{
@@ -449,6 +456,9 @@ svg:focus{
  .experienceContainer h2{
      text-align: center;
      padding: 20px;
+     text-transform: uppercase;
+     letter-spacing: 0.5rem;
+     font-size: 1.5rem!important;
  }
 
  .job h3{
@@ -472,30 +482,18 @@ svg:focus{
      outline: none;
      color: whitesmoke;
      text-align: right;
-     padding: 30px 0px 30px 0px;
+     padding: 5px 0px 5px 0px;
      font-family: 'Maitree', sans-serif;
      font-weight: bold;
      letter-spacing: 0.1rem;
+     margin-bottom: 20px;
  }
 
  .job a:hover{
     font-weight: bolder;
     text-decoration: none;
     color: white;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
  }
-
-
-@-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #a2ddec, 0 0 40px #dceceb, 0 0 50px #d2e8ecec, 0 0 60px #eee2e8, 0 0 70px #d2e5ec;
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #d1eaf0, 0 0 40px #d5d7eb, 0 0 50px #c1eef7, 0 0 60px #cdf1ee, 0 0 70px #d8f8e8, 0 0 80px #ffffff;
-    }
-  }
 
   .digMenu{
     background-color: black!important;
@@ -549,13 +547,158 @@ svg:focus{
     color: black!important;
  }
 
- .dUnderline {
+ .linkUnderline {
     background-image: linear-gradient(120deg, #4a97b6 0%, #4acc80 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: 0 88%;
     transition: background-size 0.25s ease-in;
   }
-.dUnderline:hover {
+.linkUnderline:hover {
     background-size: 100% 88%;
+}
+
+
+ /* ---------------ANALOGIC--------------- */
+
+#a{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 3rem!important;
+    padding: 20px;    
+}
+
+.analogicContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.aEducation, .aWorks{
+    width: 75%;
+    border-top: 5px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(120deg, #fab384 0%, #ec8ff4 100%);
+}
+
+.aEducation h2, .aWorks h2{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 1.5rem!important;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.aEducationContainer ul li{
+    list-style: none;
+    margin: 10px;
+    margin-left: 60px;
+    transition: all 0.75s ease-in-out;
+}
+
+.aEducationContainer ul li::after{
+    display: inline-block;
+    content: "";
+    border-top: .15rem solid rgba(5, 5, 5, 0.548);
+    width: 30rem;
+    margin: 0 1rem;
+}
+
+.aEducationContainer ul li:hover{
+    margin-left: 40px;
+}
+
+.aEducationContainer ul li h3{
+    font-size: 20px!important;
+}
+
+.aEducationContainer ul li h4{
+    font-size: 18px!important;
+}
+
+.aWorks{
+    width: 75%;
+}
+
+.aWorks .work h3{
+    text-transform: capitalize;
+}
+
+.workContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0px!important;
+}
+
+.work{
+    width: 50%;
+    height: 450px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    background-color: rgba(209, 209, 209, 0.205);
+}
+
+.work:hover{
+    box-shadow: 0 0 5px 2px rgb(141, 141, 141);
+}
+
+.work img{
+    width: 205px;
+    height: 275px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-self: center;
+}
+
+.work h3{
+    font-size: 18px!important;
+    text-align: center;
+    height: 45px;
+}
+
+.work h6{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.work p{
+    color: black;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.work p:hover{
+    color: black;
+    font-weight: bolder;
+    font-size: 18px!important;
+    text-decoration: none;
+}
+
+embed{
+    width: 75%;
+    height: 1125px;
+}
+
+.no-disp{
+    display: none;
+}
+
+.workContainer button {
+    margin: 45px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    letter-spacing: 0.25rem;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+
 }
