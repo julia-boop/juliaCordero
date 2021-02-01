@@ -6,9 +6,12 @@ router.get('/', function(req, res){
 });
 router.get('/digital', function(req, res){
     res.render('digital')
-})
+});
 router.get('/analogic', function(req, res){
     res.render('analogic')
-})
+});
+router.get('/contact', function(req, res){
+    res.render('contact')
+});
 
 module.exports = router
