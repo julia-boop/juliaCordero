@@ -30,22 +30,33 @@ h4, h5{
     background-color: transparent;
     position: absolute;
     width: 100%;
+    /* display: flex; */
 }
 
 .nav #j{
     color: white;
     text-align: center;
     position: relative;
-    left: 21%;
+    /* left: 18%; */
     margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-left: 8%;
 }
 
 .nav #c{
     color: black;
     text-align: center;
     position: relative;
-    right: 16.5%;
+    /* right: 6.5%; */
     margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-left: 8%;
+}
+
+.nav div{
+    display: flex;
 }
 
 .homeContainer{
@@ -156,6 +167,7 @@ h4, h5{
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: flex-end;
+    margin-right: 35px;
 }
 
 .quote{
@@ -758,10 +770,112 @@ embed{
  .contactContainer form textarea{
      margin-bottom: 50px;
      transition: all 0.5s ease-in-out;
+     width: 50%;
  }
 
  .contactContainer form input:focus, textarea:focus{
      outline: none;
      box-shadow: 0 0 5px 10px rgba(141, 141, 141, 0.541);
     border-radius: 5px;
+ }
+
+ /* ---------------FOOTER--------------- */
+
+
+.footerContainer{
+    clear: both;
+    position: relative;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(158, 158, 158);
+}
+
+.footerContainer footer i{
+    color: grey;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+ /* ---------------MEDIA QUERIES--------------- */
+
+ @media(max-width:870px){
+    #j, #c{
+        font-size: 30px;
+    }
+
+    .analogic h2, .diigtal h2{
+        font-size: 30px;
+    }
+
+    .analogic h3, .analogic h4 a, .digital h3, .digital h4 a{
+        font-size: 20px;
+    }
+ }
+
+ @media(max-width:700px){
+     #j, #c{
+         letter-spacing: 0.5rem!important;
+         font-size:25px;
+
+     }
+
+     .textContainer h4{
+         font-size: 20px;
+     }
+
+     .textContainer h5{
+         font-size: 18px;
+     }
+
+     .about img{
+         margin-left: 50px;
+     }
+ }
+
+ @media(max-width:525px){
+    #j, #c{
+        letter-spacing: 0.25rem;
+        font-size: 22px;
+    }
+
+    .btnMenu{
+        top:1%;
+    }
+
+    .nav div{
+        margin-top: 40px;
+    }
+
+    .about img{
+        height: 150px
+    }
+
+ }
+
+ @media(max-width:475px){
+    #j, #c{
+        font-size: 18px;
+    }     
+
+    .aboutContainer{
+        flex-direction: column;
+    }
+
+    .textContainer{
+        padding: 20px;
+        margin: 0px;
+    }
+
+    .about img{
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    .footerContainer footer i{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
  }
