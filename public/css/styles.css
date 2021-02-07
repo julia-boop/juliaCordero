@@ -733,6 +733,10 @@ embed{
 
  /* ---------------CONTACT--------------- */
 
+ .contactContainer{
+     margin: 0px!important;
+ }
+
  .contactContainer h1{
     text-transform: uppercase;
     letter-spacing: 3rem;
@@ -828,6 +832,38 @@ embed{
     .job h3{
         font-size: 22px!important;
     }
+
+    .sidebar{
+        width: 25%;
+    }
+
+    .click{
+        right: 25%;
+    }
+
+    .aEducationContainer ul li::after {
+        display: inline-block;
+        content: "";
+        border-top: .15rem solid rgba(5, 5, 5, 0.548);
+        width: 25rem;
+        margin: 0 1rem;
+    }
+
+    .contactContainer h1{
+        font-size: 120px;
+    }
+
+    .contactContainer form label{
+        width: 75%;
+    }
+
+    .contactContainer form input{
+        width: 75%;
+    }
+
+    .contactContainer form textarea{
+        width: 75%;
+    }
  }
 
  @media(max-width:700px){
@@ -866,10 +902,39 @@ embed{
         width: 100px;
     }
 
-    .job p{
-        
+    .aEducationContainer ul li::after {
+        display: inline-block;
+        content: "";
+        border-top: .15rem solid rgba(5, 5, 5, 0.548);
+        width: 20rem;
+        margin: 0 1rem;
+    }
+
+    .contactContainer h1{
+        font-size: 80px;
+        letter-spacing: 2rem;
     }
    
+ }
+
+ @media(max-width:650px){
+    .aEducationContainer ul li::after {
+        display: inline-block;
+        content: "";
+        border-top: .15rem solid rgba(5, 5, 5, 0.548);
+        width: 15rem;
+        margin: 0 1rem;
+    }
+
+
+    .aEducationContainer ul li{
+        margin-left: 30px;
+    }
+
+    #a{
+        margin-top: 25px;
+    }
+
  }
 
  @media(max-width:525px){
@@ -910,6 +975,15 @@ embed{
         margin-left: 30px;
     }
 
+    .aEducationContainer ul li::after {
+        display: inline-block;
+        content: "";
+        border-top: .15rem solid rgba(5, 5, 5, 0.548);
+        width: 15rem;
+        margin: 0 1rem;
+    }
+
+
  }
 
  @media(max-width:475px){
@@ -944,6 +1018,33 @@ embed{
         margin: 0 1rem;
     }
 
+
+    .sidebar{
+        width: 50%;
+    }
+
+    .click{
+        right: 35%;
+        z-index: 1001;
+        top: 0%;
+    }
+
+    .aEducationContainer ul li::after {
+        display: inline-block;
+        content: "";
+        border-top: .15rem solid rgba(5, 5, 5, 0.548);
+        width: 10rem;
+        margin: 0 1rem;
+    }
+
+    #a{
+        font-size: 25px!important;
+    }
+
+    .contactContainer h1{
+        font-size: 45px;
+    }
+
  }
 
  @media(max-width:400px){
@@ -953,5 +1054,7 @@ embed{
         width: 90px;
         margin: 10px;
     }
+
+
 
  }
