@@ -501,7 +501,7 @@ svg:focus{
  .job p{
     font-family: 'Exo', sans-serif;
     padding: 20px 0px 20px 0px;
-    height: 70px;
+    height: 85px;
  }
 
  .job a{
@@ -812,6 +812,22 @@ embed{
     .analogic h3, .analogic h4 a, .digital h3, .digital h4 a{
         font-size: 20px;
     }
+
+    .list ul li::after {
+        display: inline-block;
+        content: "";
+        border-top: .15rem solid rgba(121, 121, 121, 0.548);
+        width: 25rem;
+        margin: 0 1rem;
+    }
+
+    .skillContainer .bubbles div {
+        margin:20px;
+    }
+
+    .job h3{
+        font-size: 22px!important;
+    }
  }
 
  @media(max-width:700px){
@@ -832,6 +848,28 @@ embed{
      .about img{
          margin-left: 50px;
      }
+
+     .list ul li::after {
+        display: inline-block;
+        content: "";
+        border-top: .15rem solid rgba(121, 121, 121, 0.548);
+        width: 20rem;
+        margin: 0 1rem;
+    }
+
+    .bubbles h4{
+        font-size: 17px!important;
+    }
+
+    .skillContainer .bubbles div {
+        height: 100px;
+        width: 100px;
+    }
+
+    .job p{
+        
+    }
+   
  }
 
  @media(max-width:525px){
@@ -850,6 +888,26 @@ embed{
 
     .about img{
         height: 150px
+    }
+
+    .list ul li::after {
+        display: inline-block;
+        content: "";
+        border-top: .15rem solid rgba(121, 121, 121, 0.548);
+        width: 15rem;
+        margin: 0 1rem;
+    }
+
+    .educationContainer ul li h3 {
+        font-size: 18px!important;
+    }
+
+    .educationContainer ul li h4 {
+        font-size: 16px!important;
+    }
+
+    .educationContainer ul li {
+        margin-left: 30px;
     }
 
  }
@@ -876,6 +934,24 @@ embed{
     .footerContainer footer i{
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    .list ul li::after {
+        display: inline-block;
+        content: "";
+        border-top: .15rem solid rgba(121, 121, 121, 0.548);
+        width: 10rem;
+        margin: 0 1rem;
+    }
+
+ }
+
+ @media(max-width:400px){
+
+    .skillContainer .bubbles div{
+        height: 90px;
+        width: 90px;
+        margin: 10px;
     }
 
  }
