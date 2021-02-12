@@ -13,7 +13,9 @@ window.addEventListener('load', function(){
     let vtok = document.querySelector('.v-tok');
 
     //other
-    let btn = document.querySelector('.close-btn')
+    let btn = document.querySelector('.close-btn');
+    
+
 
 
     vmonoib.addEventListener('click', function(){
