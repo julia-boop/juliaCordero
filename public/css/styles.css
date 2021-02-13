@@ -302,7 +302,7 @@ svg:focus{
     color: white;
 }
 
-.link a:hover{
+.link a:hover, .link a:focus{
     text-decoration: none;
     color: white;
 }
@@ -320,7 +320,7 @@ svg:focus{
  }
 
  .link:hover:after,
- .link.hover:after {
+ .link.hover:after, .link:focus:after {
     left: 100%;
     color: white;
  }
@@ -334,7 +334,7 @@ svg:focus{
  }
 
  .link:hover .text,
- .link.hover .text {
+ .link.hover .text, .link:focus .text {
     text-shadow: 0px -40px 0px rgb(255, 255, 255);
     transform: translateY(0%) translateZ(0) scale(1.1);
     font-weight: 600;
