@@ -16,19 +16,19 @@ window.addEventListener('load', function(){
 
     console.log(homeNav)
 
-    homeNav.addEventListener('touchstart', function(){
+    homeNav.addEventListener('touch', function(){
         window.location.href = '/'
     })
 
-    digital.addEventListener('touchstart', function(){
+    digital.addEventListener('touch', function(){
         window.location.href = '/digital'
     })
 
-    analogic.addEventListener('touchstart', function(){
+    analogic.addEventListener('touch', function(){
         window.location.href = '/analogic'
     })
 
-    contact.addEventListener('touchstart', function(){
+    contact.addEventListener('touch', function(){
         window.location.href = '/contact'
     })
 })
