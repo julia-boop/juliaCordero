@@ -307,7 +307,7 @@ svg:focus{
     color: white;
 }
 
- .link:after {
+ /* .link:after {
     content: "";
     position: absolute;
     width: 80%;
@@ -339,7 +339,7 @@ svg:focus{
     transform: translateY(0%) translateZ(0) scale(1.1);
     font-weight: 600;
     color: white;
- }
+ } */
  
  /* ---------------DIGITAL--------------- */
 
