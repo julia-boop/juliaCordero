@@ -371,7 +371,7 @@ svg:focus{
 
  .educationContainer{
     width: 75%;
-    border-top: 5px solid;
+    border-top: 5px solid ;
      border-image-slice: 1;
      border-width: 5px;
      border-image-source: linear-gradient(120deg, #4a97b6 0%, #4acc80 100%);
@@ -426,6 +426,7 @@ svg:focus{
      border-image-source: linear-gradient(120deg, #4a97b6 0%, #4acc80 100%);
      margin-top: 50px;
      margin-bottom: 50px;
+     padding-bottom: 20px;
  }
 
  .skillContainer h2{
@@ -487,6 +488,10 @@ svg:focus{
      font-size: 1.5rem!important;
  }
 
+ .jobsContainer{
+    padding-bottom: 30px;
+ }
+
  .job h3{
      margin-bottom: 20px;
      margin-top: 20px;
@@ -537,7 +542,7 @@ svg:focus{
   .digLink{
       color: black!important;
   }
-
+/* 
   .digLink:after {
     content: "";
     position: absolute;
@@ -548,17 +553,17 @@ svg:focus{
     transition-delay: all 0.5s;
     transition: all 0.5s;
     color: black!important;
- }
+ } */
 
  .digLink a{
     color: black!important;
 }
 
-.digLink a:hover{
+/* .digLink a:hover{
     color: black!important;
-}
+} */
 
- .digLink .digText {
+ /* .digLink .digText {
     text-shadow: 0px -40px 0px rgb(0, 0, 0)!important;
     transition: all 0.75s;
     transform: translateY(100%) translateZ(0);
@@ -572,7 +577,7 @@ svg:focus{
     transform: translateY(0%) translateZ(0) scale(1.1);
     font-weight: 600;
     color: black!important;
- }
+ } */
 
  .linkUnderline {
     background-image: linear-gradient(120deg, #4a97b6 0%, #4acc80 100%);
@@ -609,6 +614,8 @@ svg:focus{
     border-image-slice: 1;
     border-width: 5px;
     border-image-source: linear-gradient(120deg, #fab384 0%, #ec8ff4 100%);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .aEducation h2, .aWorks h2{
