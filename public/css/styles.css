@@ -790,6 +790,24 @@ embed{
     border-radius: 5px;
  }
 
+ .contactContainer button{
+     margin-bottom: 20px;
+     width: 50%;
+     border-radius: 5px;
+     background-color: rgb(107, 107, 107);
+     color:white;
+     padding: 15px;
+     text-transform: uppercase;
+     letter-spacing: 1rem;
+     transition: all 0.5s ease-in-out;
+ }
+
+ .contactContainer button:focus, button:hover{
+    outline: none;
+    box-shadow: 0 0 5px 10px rgba(141, 141, 141, 0.541);
+   border-radius: 5px;
+ }
+
  /* ---------------FOOTER--------------- */
 
 

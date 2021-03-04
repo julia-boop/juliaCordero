@@ -26,7 +26,7 @@
     <div class="row contactContainer"> 
         <h1 class="col-4">Let's Talk;</h1>
 
-        <form action="" class="col-10 col-md-7">
+        <form action="/contact" method="POST" class="col-10 col-md-7">
             <label for="">Name</label>
             <input type="text" name="name" id="">
             <label for="">LastName</label>
@@ -37,6 +37,7 @@
             <input type="text" name="title" id="">
             <label for="">Message</label>
             <textarea name="message" id="" cols="45" rows="10"></textarea>
+            <button type="submit">Send</button>
         </form>
     </div>
     <%- include('./partials/footer.ejs') %> 
