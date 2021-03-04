@@ -39,6 +39,8 @@ router.post('/contact', async function(req, res){
               console.log('Email sent: ' + info.response);
             }
         }); 
+
+        return res.render('home')
 })
 
 module.exports = router
