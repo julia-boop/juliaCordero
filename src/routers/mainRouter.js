@@ -40,7 +40,6 @@ router.post('/contact', async function(req, res){
             }
         }); 
 
-        return res.render('home')
 })
 
 module.exports = router
