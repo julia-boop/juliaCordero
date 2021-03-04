@@ -16,8 +16,8 @@ router.get('/analogic', function(req, res){
 router.get('/contact', function(req, res){
     res.render('contact')
 });
-router.post('/contact', async function(req, res){
-        let transporter = await nodemailer.createTransport({
+router.post('/contact',  function(req, res){
+        let transporter =  nodemailer.createTransport({
             host: "plesk.ar.conectemos.com",
             port: 25,
             auth: {
@@ -27,16 +27,16 @@ router.post('/contact', async function(req, res){
         });
         let mailOptions = {
             from: req.body.email,
-            to: process.env.MAIL_USER,
+            to: 'contact@juliacordero.com',
             subject: req.body.title,
-            text: (req.body.message != null || req.body.message != '') ? `${req.body.name} ${req.body.last_name} envio el siguiente mensaje: ${req.body.message}` : 'El usuario no adjunto ningun comentario'
+            text: req.body.message
         };
           
         transporter.sendMail(mailOptions, function(error, info){
             if (error) {
               console.log(error);
             } else {
-              console.log('Email sent: ' + info.response);
+              console.log('mail enviado' + info.response);
             }
         }); 
 ///aaa
