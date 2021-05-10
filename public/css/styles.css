@@ -590,6 +590,24 @@ svg:focus{
     background-size: 100% 88%;
 }
 
+.working {
+    margin: 10px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    transition: all 0.75s ease-in-out;
+}
+
+.working:hover{
+    margin-left: 40px;
+}
+
+.working::after{
+    display: inline-block;
+    content: "";
+    border-top: .15rem solid rgba(121, 121, 121, 0.548);
+    width: 30rem;
+    margin: 0 1rem;
+}
 
  /* ---------------ANALOGIC--------------- */
 
