@@ -595,7 +595,6 @@ svg:focus{
     margin-bottom: 40px;
     margin-left: 60px;
     transition: all 0.75s ease-in-out;
-    border-bottom: 2px solid rgba(121, 121, 121, 0.548);
 }
 
 .working:hover{
