@@ -595,19 +595,20 @@ svg:focus{
     margin-bottom: 40px;
     margin-left: 60px;
     transition: all 0.75s ease-in-out;
+    border-bottom: 2px solid rgba(121, 121, 121, 0.548);
 }
 
 .working:hover{
     margin-left: 40px;
 }
 
-.working::after{
+/* .working::after{
     display: inline-block;
     content: "";
     border-top: .15rem solid rgba(121, 121, 121, 0.548);
     width: 30rem;
     margin: 0 1rem;
-}
+} */
 
  /* ---------------ANALOGIC--------------- */
 
